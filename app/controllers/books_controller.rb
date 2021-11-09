@@ -6,12 +6,18 @@ class BooksController < ApplicationController
   end
 
   def create
-    #データを新規登録するためのインスタンス作成
     book = Book.new(book_params)
-    #データをデータベースに保存するためのsaveメソッド実行
     book.save
-    #詳細画面showへリダイレクト（名前付きルート設定）
     redirect_to book_path(book.id)
+  end
+
+  def create
+    book = Book.new(book_params)
+    if book.save
+      redirect_to book_path(book.id)
+    else
+      render :index
+    end
   end
 
   def show
