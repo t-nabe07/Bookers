@@ -13,3 +13,80 @@
  *= require_tree .
  *= require_self
  */
+
+/* top.html.erb */
+.strong {
+  font-weight: bold;
+}
+
+p {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  margin: 33px;
+}
+
+
+
+/* index.html.erb */
+div,field {
+  margin-bottom: 10px;
+}
+
+div {
+  display: block;
+}
+
+body {
+  color: #333;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  margin: 33px;
+}
+
+.table {
+  display: table;
+  border-collapse: separate;
+  box-sizing: border-box;
+  text-indent: initial;
+  border-spacing: 2px;
+  border-color: grey;
+}
+
+.thead {
+  display: table-header-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
+
+.tr {
+  display: table-row;
+  vertical-align: inherit;
+  border-color: inherit;
+}
+
+.th {
+  padding-bottom: 5px;
+  display: table-cell;
+  font-weight: bold;
+  text-align: -internal-center;
+}
+
+.tbody {
+  display: table-row-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
+
+.h1 {
+  display: block
+  font-weight: bold;
+}
+
+
+/* show.html.erb */
+
+#succes {
+  color:green;
+}
